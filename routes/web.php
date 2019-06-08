@@ -38,3 +38,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('visa_file_upload', 'VisaStatusController@index');
 Route::post('visa_file_upload', 'VisaStatusController@storeData');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
