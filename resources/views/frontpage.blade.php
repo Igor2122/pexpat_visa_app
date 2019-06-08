@@ -5,7 +5,7 @@
 <!-- Main component for call to action -->
 <div class="jumbotron">
     <h1>
-        Notebook
+        Pexpats Visa App
     </h1>
     <p>
         Store and organise your thoughts in notebook and NoteBook web app makes this easier than ever
