@@ -19,3 +19,6 @@ Route::get('/user', function (Request $request) {
 
 Route::resource('cal', 'gCalendarController');
 Route::get('oauth', 'gCalendarController@oauth')->name('oauthCallback');
+
+Route::get('visa_file_upload', 'VisaStatusController@index');
+Route::get('search/{id}', 'VisaStatusController@show');

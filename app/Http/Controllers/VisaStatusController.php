@@ -15,7 +15,8 @@ class VisaStatusController extends Controller
      */
     public function index()
     {
-        return view('visa_file_upload');
+        $allData = VisaStatus::all();
+        return view('visa_file_upload', compact('allData'));
     }
 
     public function storeData(Request $request)
@@ -86,7 +87,9 @@ class VisaStatusController extends Controller
      */
     public function show($id)
     {
-        //
+        // dd($id);
+        dd(VisaStatus::where('visa', $id)->get());
+        return VisaStatus::find($id);
     }
 
     /**
